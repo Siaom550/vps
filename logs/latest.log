@@ -1,0 +1,62 @@
+[08:50:50] [ServerMain/INFO]: Environment: Environment[discoveryUrl=https://discovery.minecraftservices.com/minecraft/client, name=PROD]
+[08:50:52] [Worker-Main-1/INFO]: No existing world data, creating new world
+[08:50:54] [Worker-Main-1/INFO]: Loaded 1866 advancements
+[08:50:54] [Server thread/INFO]: Starting minecraft server version 26.3
+[08:50:54] [Server thread/INFO]: Loading properties
+[08:50:54] [Server thread/INFO]: Default game type: SURVIVAL
+[08:50:54] [Server thread/INFO]: Generating keypair
+[08:50:54] [Server thread/INFO]: Starting Minecraft server on *:25565
+[08:50:55] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[08:50:55] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[08:50:55] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[08:50:55] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[08:50:55] [Server thread/INFO]: Preparing level "world"
+[08:50:55] [Server thread/INFO]: Selecting global world spawn...
+[08:51:00] [Server thread/INFO]: Loading 0 persistent chunks...
+[08:51:00] [Server thread/INFO]: Preparing spawn area: 100%
+[08:51:00] [Server thread/INFO]: Time elapsed: 5438 ms
+[08:51:00] [Server thread/INFO]: Done (5.850s)! For help, type "help"
+[08:51:00] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[08:51:01] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[08:51:01] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[08:51:30] [Server thread/WARN]: Couldn't find profile with name: siaom_sk
+MinecraftClientHttpException[type=HTTP_ERROR, status=404, response=ErrorResponse[path=/users/profiles/minecraft/siaom_sk, error=null, errorMessage=Couldn't find any profile with name siaom_sk, details=null]]
+	at com.mojang.authlib.minecraft.client.MinecraftClient.buildHttpException(MinecraftClient.java:170)
+	at com.mojang.authlib.minecraft.client.MinecraftClient.readServiceResponse(MinecraftClient.java:147)
+	at com.mojang.authlib.minecraft.client.MinecraftClient.getWithEtag(MinecraftClient.java:81)
+	at com.mojang.authlib.minecraft.client.MinecraftClient.get(MinecraftClient.java:65)
+	at com.mojang.authlib.services.MinecraftServicesProfileRepository.findProfileByName(MinecraftServicesProfileRepository.java:103)
+	at net.minecraft.server.players.CachedUserNameToIdResolver.lookupGameProfile(CachedUserNameToIdResolver.java:73)
+	at net.minecraft.server.players.CachedUserNameToIdResolver.get(CachedUserNameToIdResolver.java:134)
+	at net.minecraft.commands.arguments.GameProfileArgument.lambda$parse$0(GameProfileArgument.java:66)
+	at net.minecraft.commands.arguments.GameProfileArgument.getGameProfiles(GameProfileArgument.java:32)
+	at net.minecraft.server.commands.WhitelistCommand.lambda$register$5(WhitelistCommand.java:53)
+	at com.mojang.brigadier.context.ContextChain.runExecutable(ContextChain.java:73)
+	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:29)
+	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:13)
+	at net.minecraft.commands.execution.UnboundEntryAction.lambda$bind$0(UnboundEntryAction.java:8)
+	at net.minecraft.commands.execution.CommandQueueEntry.execute(CommandQueueEntry.java:8)
+	at net.minecraft.commands.execution.ExecutionContext.runCommandQueue(ExecutionContext.java:106)
+	at net.minecraft.commands.Commands.executeCommandInContext(Commands.java:438)
+	at net.minecraft.commands.Commands.performCommand(Commands.java:370)
+	at net.minecraft.commands.Commands.performPrefixedCommand(Commands.java:356)
+	at net.minecraft.server.dedicated.DedicatedServer.handleConsoleInputs(DedicatedServer.java:412)
+	at net.minecraft.server.dedicated.DedicatedServer.tickConnection(DedicatedServer.java:402)
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1127)
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:980)
+	at net.minecraft.server.dedicated.DedicatedServer.tickServer(DedicatedServer.java:278)
+	at net.minecraft.server.MinecraftServer.processPacketsAndTick(MinecraftServer.java:1013)
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:752)
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:310)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+[08:51:30] [Server thread/INFO]: System chat: Added siaom_sk to the whitelist
+[08:52:01] [Server thread/INFO]: Server empty for 60 seconds, pausing
+[08:58:03] [Server thread/INFO]: Disconnecting Siaom_SK (/[0:0:0:0:0:0:0:1]:37690): You are not white-listed on this server!
+[08:58:03] [Server thread/INFO]: Siaom_SK (/[0:0:0:0:0:0:0:1]:37690) lost connection: You are not white-listed on this server!
+[08:58:03] [Server thread/WARN]: handleDisconnection() called twice
+[08:58:27] [Server thread/INFO]: System chat: Unknown or incomplete command. See below for error
+[08:58:27] [Server thread/INFO]: System chat: wl add Siaom_SK<--[HERE]
+[08:58:35] [Server thread/INFO]: System chat: Player is already whitelisted
+[08:58:42] [Server thread/INFO]: Disconnecting Siaom_SK (/[0:0:0:0:0:0:0:1]:42292): You are not white-listed on this server!
+[08:58:42] [Server thread/INFO]: Siaom_SK (/[0:0:0:0:0:0:0:1]:42292) lost connection: You are not white-listed on this server!
+[08:58:42] [Server thread/WARN]: handleDisconnection() called twice
